@@ -98,6 +98,21 @@ h1 {
     transform: translateY(-5px);
 }
 
+.infografia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infografia_img{
+    margin-right: 25px;
+}
+
+.inf_img{
+    border-radius: 50px;
+}
+
+
 .text {
     margin: auto;
     margin-bottom: 20px;
