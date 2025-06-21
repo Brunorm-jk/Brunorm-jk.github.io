@@ -71,7 +71,7 @@ body {
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 100%;
     color: #00755c;
     text-shadow: 2px 4px #00c16c;
     transition: font-size 0.3s ease;
@@ -175,9 +175,12 @@ h2 {
     }
     .examples{
         height: 80%;
-        width: 80%;
+        width: 85%;
     }
     h1 {
         font-size: 8vw;
+    }
+    .cbtis {
+        max-height: 70%;        
     }
 }
