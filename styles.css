@@ -142,8 +142,8 @@ h2 {
 
 .examples{
     margin: auto;
-    height: 50vh;
-    width: 50vw;
+    height: 50%;
+    width: 50%;
     background-color:#e9ffe1 ;
     border: transparent 5px solid;
     border-radius: 150px;
@@ -172,5 +172,12 @@ h2 {
         width: 100%;
         height: auto;
         object-fit: contain;
+    }
+    .examples{
+        height: 80%;
+        width: 80%;
+    }
+    h1 {
+        font-size: 8vw;
     }
 }
