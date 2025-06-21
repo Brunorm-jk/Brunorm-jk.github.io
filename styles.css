@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Nunito";
-    src: url(font/Nunito/Nunito-VariableFont_wght.ttf) format("truetype");
+    src: url('font/Nunito/Nunito-VariableFont_wght.ttf') format("truetype");
 }
 
 * {
@@ -32,6 +32,11 @@ body {
     transition: height 0.3s ease;
 }
 
+.Banner {
+    height: 15vh;
+    min-height: 80px; /* para que no sea tan pequeño */
+}
+
 .Banner.shrink {
     height: 8vh;
 }
@@ -54,8 +59,9 @@ body {
 }
 
 .cbtis {
-    height: 125px;
+    max-height: 100%;
     transition: height 0.3s ease;
+    height: auto;
 }
 
 .logo.hidden {
@@ -124,6 +130,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
 .steps {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -146,30 +157,20 @@ h1 {
 
 }
 
-
 @media (max-width: 768px) {
-    .sections-container {
+    .infografia {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* opcional, para centrar el contenido */
     }
 
-    .section {
-        width: 90%;
+    .infografia_img {
+        width: 80%;
+        margin: 20px 0;
     }
 
-    h1 {
-        font-size: 8vw;
-    }
-
-    .logo {
-        height: 60px;
-    }
-
-    .cbtis {
-        height: 100px;
-    }
-
-    .Banner.shrink .cbtis {
-        height: 65px;
+    .inf_img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 }
